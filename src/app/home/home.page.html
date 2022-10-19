@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cual es mayor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-input type="number" [(ngModel)]="num1" placeholder="Introduce un número"></ion-input>
+  </div>
+  <div class="ion-padding">
+    <ion-input type="number" [(ngModel)]="num2" placeholder="Introduce otro número"></ion-input>
+    <div>
+      <p>El {{ num1 }} es {{ mayorMenor }} que {{ num2 }}</p>
+    </div>
+    <ion-button exapand="block" (click)="calcular()">Calcular</ion-button>
+  </div>
+</ion-content>
