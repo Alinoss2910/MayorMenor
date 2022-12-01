@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="fondo">
   <div class="ion-padding">
     <ion-input type="number" [(ngModel)]="num1" placeholder="Introduce un número"></ion-input>
   </div>
@@ -16,5 +16,6 @@
       <p>El {{ num1 }} es {{ mayorMenor }} que {{ num2 }}</p>
     </div>
     <ion-button exapand="block" (click)="calcular()">Calcular</ion-button>
+    <ion-button exapand="block" (click)="calcular()" class="duplicado">Calcular2</ion-button>
   </div>
 </ion-content>
